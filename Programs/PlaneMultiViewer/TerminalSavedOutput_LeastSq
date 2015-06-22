@@ -1,0 +1,627 @@
+Last login: Thu Apr  9 10:37:42 on ttys000
+maja1668@Vans-MacBook-Pro:~$ cd Documents/senior-project/Programs/PlaneMultiVie
+wer/
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$
+ ls
+total 208
+drwxr-xr-x@  7 staff   238B Apr  4 16:46 Archive/
+-rw-r-----@  1 staff    10K Apr  8 19:24 PlaneMultiViewer02_maxrect.py
+-rw-r--r--@  1 staff   1.8K Mar  5 19:28 chesscorners.py
+-rw-r--r--   1 staff   1.8K Mar  5 19:28 chesscorners.pyc
+drwxr-xr-x@ 17 staff   578B Apr  6 17:39 data/
+drwxr-xr-x@  9 staff   306B Jan 29 14:42 displayFullScreen/
+-rw-r--r--@  1 staff   2.3K Jan 30 21:48 leTest.py
+-rw-r--r--@  1 staff   5.3K Apr  8 21:23 leastSquares.py
+-rw-r--r--   1 staff   5.0K Apr  8 19:25 leastSquares.pyc
+-rw-r--r--@  1 staff   5.3K Mar  5 19:18 longexposure.py
+-rw-r--r--   1 staff   4.2K Mar  5 19:19 longexposure.pyc
+-rw-r--r--@  1 staff     1B Apr  7 21:58 naming.txt
+-rw-r--r--@  1 staff    42K Apr  6 17:59 testLeastSq.xlsx
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$
+ cp leastSquares.py oldLeastSquares.py
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$
+ ls
+total 224
+drwxr-xr-x@  7 staff   238B Apr  4 16:46 Archive/
+-rw-r-----@  1 staff    10K Apr  8 19:24 PlaneMultiViewer02_maxrect.py
+-rw-r--r--@  1 staff   1.8K Mar  5 19:28 chesscorners.py
+-rw-r--r--   1 staff   1.8K Mar  5 19:28 chesscorners.pyc
+drwxr-xr-x@ 17 staff   578B Apr  6 17:39 data/
+drwxr-xr-x@  9 staff   306B Jan 29 14:42 displayFullScreen/
+-rw-r--r--@  1 staff   2.3K Jan 30 21:48 leTest.py
+-rw-r--r--@  1 staff   5.3K Apr  8 21:23 leastSquares.py
+-rw-r--r--   1 staff   5.0K Apr  8 19:25 leastSquares.pyc
+-rw-r--r--@  1 staff   5.3K Mar  5 19:18 longexposure.py
+-rw-r--r--   1 staff   4.2K Mar  5 19:19 longexposure.pyc
+-rw-r--r--@  1 staff     1B Apr  7 21:58 naming.txt
+-rw-r--r--@  1 staff   5.3K Apr  9 13:48 oldLeastSquares.py
+-rw-r--r--@  1 staff    42K Apr  6 17:59 testLeastSq.xlsx
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$
+ mv oldLeastSquares.py Archive/oldLeastSquares.py 
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$
+ ls
+total 208
+drwxr-xr-x@  8 staff   272B Apr  9 13:48 Archive/
+-rw-r-----@  1 staff    10K Apr  8 19:24 PlaneMultiViewer02_maxrect.py
+-rw-r--r--@  1 staff   1.8K Mar  5 19:28 chesscorners.py
+-rw-r--r--   1 staff   1.8K Mar  5 19:28 chesscorners.pyc
+drwxr-xr-x@ 17 staff   578B Apr  6 17:39 data/
+drwxr-xr-x@  9 staff   306B Jan 29 14:42 displayFullScreen/
+-rw-r--r--@  1 staff   2.3K Jan 30 21:48 leTest.py
+-rw-r--r--@  1 staff   5.3K Apr  8 21:23 leastSquares.py
+-rw-r--r--   1 staff   5.0K Apr  8 19:25 leastSquares.pyc
+-rw-r--r--@  1 staff   5.3K Mar  5 19:18 longexposure.py
+-rw-r--r--   1 staff   4.2K Mar  5 19:19 longexposure.pyc
+-rw-r--r--@  1 staff     1B Apr  7 21:58 naming.txt
+-rw-r--r--@  1 staff    42K Apr  6 17:59 testLeastSq.xlsx
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$
+ ls Archive/
+total 72
+-rw-r-----@ 1 staff   7.7K Jan 29 14:48 PlaneAnamorph04_H_SC.py
+-rw-r-----@ 1 staff   8.1K Feb  5 13:49 PlaneMultiViewer00.py
+-rw-r-----@ 1 staff   7.8K Feb 13 01:14 PlaneMultiViewer01.py
+drwxr-xr-x  5 staff   170B Apr  4 16:46 leastSq/
+-rw-r--r--@ 1 staff   5.3K Apr  9 13:48 oldLeastSquares.py
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$
+ cd
+maja1668@Vans-MacBook-Pro:~$ cd Documents/senior-project/Programs/PlaneMultiVie
+wer/
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$
+ ls
+total 208
+drwxr-xr-x@  8 staff   272B Apr  9 13:48 Archive/
+-rw-r-----@  1 staff    10K Apr  8 19:24 PlaneMultiViewer02_maxrect.py
+-rw-r--r--@  1 staff   1.8K Mar  5 19:28 chesscorners.py
+-rw-r--r--   1 staff   1.8K Mar  5 19:28 chesscorners.pyc
+drwxr-xr-x@ 17 staff   578B Apr  6 17:39 data/
+drwxr-xr-x@  9 staff   306B Jan 29 14:42 displayFullScreen/
+-rw-r--r--@  1 staff   2.3K Jan 30 21:48 leTest.py
+-rw-r--r--@  1 staff   5.3K Apr  8 21:23 leastSquares.py
+-rw-r--r--   1 staff   5.0K Apr  8 19:25 leastSquares.pyc
+-rw-r--r--@  1 staff   5.3K Mar  5 19:18 longexposure.py
+-rw-r--r--   1 staff   4.2K Mar  5 19:19 longexposure.pyc
+-rw-r--r--@  1 staff     1B Apr  7 21:58 naming.txt
+-rw-r--r--@  1 staff    42K Apr  6 17:59 testLeastSq.xlsx
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ oepn lea
+stSquares.py
+-bash: oepn: command not found
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ open lea
+stSquares.py
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ open lea
+stSquares.py
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ cd Archi
+ve/
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer/Archive$ 
+ls
+total 72
+-rw-r-----@ 1 staff   7.7K Jan 29 14:48 PlaneAnamorph04_H_SC.py
+-rw-r-----@ 1 staff   8.1K Feb  5 13:49 PlaneMultiViewer00.py
+-rw-r-----@ 1 staff   7.8K Feb 13 01:14 PlaneMultiViewer01.py
+drwxr-xr-x  5 staff   170B Apr  4 16:46 leastSq/
+-rw-r--r--@ 1 staff   5.3K Apr  9 13:48 oldLeastSquares.py
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer/Archive$ 
+open oldLeastSquares.py 
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer/Archive$ 
+python oldLeastSquares.py 
+p = 
+[[100 100]
+ [200 100]
+ [100 200]
+ [200 200]]
+q1 = 
+[[  98.  178.]
+ [ 222.  178.]
+ [  98.  302.]
+ [ 222.  302.]]
+q2 = 
+[[  61.  164.]
+ [ 269.  164.]
+ [  61.  371.]
+ [ 269.  371.]]
+A = 
+[[  2.00000000e+05   1.80000000e+05   1.20000000e+03   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  1.80000000e+05   2.00000000e+05   1.20000000e+03   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  1.20000000e+03   1.20000000e+03   8.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   2.00000000e+05
+    1.80000000e+05   1.20000000e+03   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   1.80000000e+05
+    2.00000000e+05   1.20000000e+03   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   1.20000000e+03
+    1.20000000e+03   8.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   2.00000000e+05   1.80000000e+05]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   1.80000000e+05   2.00000000e+05]]
+b = 
+[[ 228200.]
+ [ 195000.]
+ [   1300.]
+ [ 304500.]
+ [ 337600.]
+ [   2030.]
+ [     -0.]
+ [     -0.]]
+H_hatInv = 
+[[  1.65999985e+00   0.00000000e+00  -8.65000000e+01]
+ [  2.99849028e-15   1.65499973e+00   5.50000000e+00]
+ [  0.00000000e+00   0.00000000e+00   1.00000000e+00]]
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer/Archive$ 
+cd ..
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+  File "leastSquares.py", line 133
+    for k in range(n)
+                    ^
+SyntaxError: invalid syntax
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [100 200]
+ [200 200]]
+q1 = 
+[[  98.  178.]
+ [ 222.  178.]
+ [  98.  302.]
+ [ 222.  302.]]
+q2 = 
+[[  61.  164.]
+ [ 269.  164.]
+ [  61.  371.]
+ [ 269.  371.]]
+Matrix dimensions not matching.
+H_hatInv = 
+-1
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [100 200]
+ [200 200]]
+q1 = 
+[[  98.  178.]
+ [ 222.  178.]
+ [  98.  302.]
+ [ 222.  302.]]
+q2 = 
+[[  61.  164.]
+ [ 269.  164.]
+ [  61.  371.]
+ [ 269.  371.]]
+A.shape = (3, 3)
+B.shape = (3, 3)
+Matrix dimensions not matching.
+H_hatInv = 
+-1
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [100 200]
+ [200 200]]
+q1 = 
+[[  98.  178.]
+ [ 222.  178.]
+ [  98.  302.]
+ [ 222.  302.]]
+q2 = 
+[[  61.  164.]
+ [ 269.  164.]
+ [  61.  371.]
+ [ 269.  371.]]
+Traceback (most recent call last):
+  File "leastSquares.py", line 234, in <module>
+    HhatInvTest()
+  File "leastSquares.py", line 178, in HhatInvTest
+    H_hatInv = HhatInv(H1, H2, p, q1, q2)
+  File "leastSquares.py", line 57, in HhatInv
+    M, b = partialDerivs(A, B, p, v, w)
+  File "leastSquares.py", line 132, in partialDerivs
+    lhs += p[k][j] * p[k][n] * (A[l][i]*A[l][m] + B[l][i]*B[l][m])
+IndexError: index 2 is out of bounds for axis 0 with size 2
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [100 200]
+ [200 200]]
+q1 = 
+[[  98.  178.]
+ [ 222.  178.]
+ [  98.  302.]
+ [ 222.  302.]]
+q2 = 
+[[  61.  164.]
+ [ 269.  164.]
+ [  61.  371.]
+ [ 269.  371.]]
+Traceback (most recent call last):
+  File "leastSquares.py", line 237, in <module>
+    HhatInvTest()
+  File "leastSquares.py", line 181, in HhatInvTest
+    H_hatInv = HhatInv(H1, H2, p, q1, q2)
+  File "leastSquares.py", line 60, in HhatInv
+    M, b = partialDerivs(A, B, p, v, w)
+  File "leastSquares.py", line 135, in partialDerivs
+    lhs += p[k][j] * p[k][n] * (A[l][i]*A[l][m] + B[l][i]*B[l][m])
+IndexError: index 2 is out of bounds for axis 0 with size 2
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [300 100]
+ [100 200]
+ [200 200]
+ [300 200]]
+q1 = 
+[[  89.  165.]
+ [ 220.  165.]
+ [ 351.  165.]
+ [  89.  295.]
+ [ 220.  295.]
+ [ 351.  295.]]
+q2 = 
+[[  70.  190.]
+ [ 230.  190.]
+ [ 390.  190.]
+ [  70.  350.]
+ [ 230.  350.]
+ [ 390.  350.]]
+Traceback (most recent call last):
+  File "leastSquares.py", line 237, in <module>
+    HhatInvTest()
+  File "leastSquares.py", line 181, in HhatInvTest
+    H_hatInv = HhatInv(H1, H2, p, q1, q2)
+  File "leastSquares.py", line 60, in HhatInv
+    M, b = partialDerivs(A, B, p, v, w)
+  File "leastSquares.py", line 135, in partialDerivs
+    lhs += p[k][j] * p[k][n] * (A[l][i]*A[l][m] + B[l][i]*B[l][m])
+IndexError: index 2 is out of bounds for axis 0 with size 2
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [300 100]
+ [100 200]
+ [200 200]
+ [300 200]]
+q1 = 
+[[  89.  165.]
+ [ 220.  165.]
+ [ 351.  165.]
+ [  89.  295.]
+ [ 220.  295.]
+ [ 351.  295.]]
+q2 = 
+[[  70.  190.]
+ [ 230.  190.]
+ [ 390.  190.]
+ [  70.  350.]
+ [ 230.  350.]
+ [ 390.  350.]]
+Traceback (most recent call last):
+  File "leastSquares.py", line 237, in <module>
+    HhatInvTest()
+  File "leastSquares.py", line 181, in HhatInvTest
+    H_hatInv = HhatInv(H1, H2, p, q1, q2)
+  File "leastSquares.py", line 60, in HhatInv
+    M, b = partialDerivs(A, B, p, v, w)
+  File "leastSquares.py", line 135, in partialDerivs
+    lhs += p[k][j] * p[k][n] #* (A[l][i]*A[l][m] + B[l][i]*B[l][m])
+IndexError: index 2 is out of bounds for axis 0 with size 2
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [300 100]
+ [100 200]
+ [200 200]
+ [300 200]]
+q1 = 
+[[  89.  165.]
+ [ 220.  165.]
+ [ 351.  165.]
+ [  89.  295.]
+ [ 220.  295.]
+ [ 351.  295.]]
+q2 = 
+[[  70.  190.]
+ [ 230.  190.]
+ [ 390.  190.]
+ [  70.  350.]
+ [ 230.  350.]
+ [ 390.  350.]]
+Traceback (most recent call last):
+  File "leastSquares.py", line 237, in <module>
+    HhatInvTest()
+  File "leastSquares.py", line 181, in HhatInvTest
+    H_hatInv = HhatInv(H1, H2, p, q1, q2)
+  File "leastSquares.py", line 60, in HhatInv
+    M, b = partialDerivs(A, B, p, v, w)
+  File "leastSquares.py", line 135, in partialDerivs
+    lhs += p[k][j]# * p[k][n] * (A[l][i]*A[l][m] + B[l][i]*B[l][m])
+IndexError: index 2 is out of bounds for axis 0 with size 2
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [300 100]
+ [100 200]
+ [200 200]
+ [300 200]]
+q1 = 
+[[  89.  165.]
+ [ 220.  165.]
+ [ 351.  165.]
+ [  89.  295.]
+ [ 220.  295.]
+ [ 351.  295.]]
+q2 = 
+[[  70.  190.]
+ [ 230.  190.]
+ [ 390.  190.]
+ [  70.  350.]
+ [ 230.  350.]
+ [ 390.  350.]]
+new p = [[ 100.  100.    1.]
+ [ 200.  100.    1.]
+ [ 300.  100.    1.]
+ [ 100.  200.    1.]
+ [ 200.  200.    1.]
+ [ 300.  200.    1.]]
+new v = [[  89.  165.    1.]
+ [ 220.  165.    1.]
+ [ 351.  165.    1.]
+ [  89.  295.    1.]
+ [ 220.  295.    1.]
+ [ 351.  295.    1.]]
+new w = [[  70.  190.    1.]
+ [ 230.  190.    1.]
+ [ 390.  190.    1.]
+ [  70.  350.    1.]
+ [ 230.  350.    1.]
+ [ 390.  350.    1.]]
+Traceback (most recent call last):
+  File "leastSquares.py", line 254, in <module>
+    HhatInvTest()
+  File "leastSquares.py", line 198, in HhatInvTest
+    H_hatInv = HhatInv(H1, H2, p, q1, q2)
+  File "leastSquares.py", line 67, in HhatInv
+    MInv = np.linalg.inv(M)
+  File "/Users/maja1668/anaconda/lib/python2.7/site-packages/numpy/linalg/linalg.py", line 520, in inv
+    ainv = _umath_linalg.inv(a, signature=signature, extobj=extobj)
+  File "/Users/maja1668/anaconda/lib/python2.7/site-packages/numpy/linalg/linalg.py", line 90, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.linalg.LinAlgError: Singular matrix
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [300 100]
+ [100 200]
+ [200 200]
+ [300 200]]
+q1 = 
+[[  89.  165.]
+ [ 220.  165.]
+ [ 351.  165.]
+ [  89.  295.]
+ [ 220.  295.]
+ [ 351.  295.]]
+q2 = 
+[[  70.  190.]
+ [ 230.  190.]
+ [ 390.  190.]
+ [  70.  350.]
+ [ 230.  350.]
+ [ 390.  350.]]
+new p = [[ 100.  100.    1.]
+ [ 200.  100.    1.]
+ [ 300.  100.    1.]
+ [ 100.  200.    1.]
+ [ 200.  200.    1.]
+ [ 300.  200.    1.]]
+new v = [[  89.  165.    1.]
+ [ 220.  165.    1.]
+ [ 351.  165.    1.]
+ [  89.  295.    1.]
+ [ 220.  295.    1.]
+ [ 351.  295.    1.]]
+new w = [[  70.  190.    1.]
+ [ 230.  190.    1.]
+ [ 390.  190.    1.]
+ [  70.  350.    1.]
+ [ 230.  350.    1.]
+ [ 390.  350.    1.]]
+M = 
+[[  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  2.23490430e+03   2.23490430e+03  -9.48778870e+02  -9.48778870e+02
+   -2.07231141e+05  -2.07231141e+05   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [ -9.48778870e+02  -9.48778870e+02   1.13082593e+03   1.13082593e+03
+    7.96530750e+05   7.96530750e+05   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [ -2.07231141e+05  -2.07231141e+05   7.96530750e+05   7.96530750e+05
+    7.34216128e+08   7.34216128e+08   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]]
+b = 
+[[  0.00000000e+00]
+ [ -4.77192725e+03]
+ [ -1.64547424e+01]
+ [  0.00000000e+00]
+ [  1.62364160e+04]
+ [  3.22106628e+02]
+ [  0.00000000e+00]
+ [  1.47299180e+07]]
+H_hatInv = 
+(array([[ -1.13014345e+01],
+       [ -1.13014345e+01],
+       [ -3.06794472e+01],
+       [ -3.06794472e+01],
+       [  3.00936922e-02],
+       [  3.00936922e-02],
+       [  0.00000000e+00],
+       [  0.00000000e+00]], dtype=float32), array([], dtype=float32), 3, array([  1.03833971e+09,   3.42216016e+03,   3.29114532e+01,
+         1.75310200e-11,   2.22680388e-15,   0.00000000e+00,
+         0.00000000e+00,   0.00000000e+00], dtype=float32))
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [300 100]
+ [100 200]
+ [200 200]
+ [300 200]]
+q1 = 
+[[  89.  165.]
+ [ 220.  165.]
+ [ 351.  165.]
+ [  89.  295.]
+ [ 220.  295.]
+ [ 351.  295.]]
+q2 = 
+[[  70.  190.]
+ [ 230.  190.]
+ [ 390.  190.]
+ [  70.  350.]
+ [ 230.  350.]
+ [ 390.  350.]]
+new p = [[ 100.  100.    1.]
+ [ 200.  100.    1.]
+ [ 300.  100.    1.]
+ [ 100.  200.    1.]
+ [ 200.  200.    1.]
+ [ 300.  200.    1.]]
+new v = [[  89.  165.    1.]
+ [ 220.  165.    1.]
+ [ 351.  165.    1.]
+ [  89.  295.    1.]
+ [ 220.  295.    1.]
+ [ 351.  295.    1.]]
+new w = [[  70.  190.    1.]
+ [ 230.  190.    1.]
+ [ 390.  190.    1.]
+ [  70.  350.    1.]
+ [ 230.  350.    1.]
+ [ 390.  350.    1.]]
+M = 
+[[  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  2.23490430e+03   2.23490430e+03  -9.48778870e+02  -9.48778870e+02
+   -2.07231141e+05  -2.07231141e+05   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [ -9.48778870e+02  -9.48778870e+02   1.13082593e+03   1.13082593e+03
+    7.96530750e+05   7.96530750e+05   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [ -2.07231141e+05  -2.07231141e+05   7.96530750e+05   7.96530750e+05
+    7.34216128e+08   7.34216128e+08   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]]
+b = 
+[[  0.00000000e+00]
+ [ -4.77192725e+03]
+ [ -1.64547424e+01]
+ [  0.00000000e+00]
+ [  1.62364160e+04]
+ [  3.22106628e+02]
+ [  0.00000000e+00]
+ [  1.47299180e+07]]
+H_hatInv = 
+[[ -1.13014345e+01  -1.13014345e+01  -3.06794472e+01]
+ [ -3.06794472e+01   3.00936922e-02   3.00936922e-02]
+ [  0.00000000e+00   0.00000000e+00   1.00000000e+00]]
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ python l
+eastSquares.py
+p = 
+[[100 100]
+ [200 100]
+ [300 100]
+ [100 200]
+ [200 200]
+ [300 200]]
+q1 = 
+[[  89.  165.]
+ [ 220.  165.]
+ [ 351.  165.]
+ [  89.  295.]
+ [ 220.  295.]
+ [ 351.  295.]]
+q2 = 
+[[  70.  190.]
+ [ 230.  190.]
+ [ 390.  190.]
+ [  70.  350.]
+ [ 230.  350.]
+ [ 390.  350.]]
+new p = [[ 100.  100.    1.]
+ [ 200.  100.    1.]
+ [ 300.  100.    1.]
+ [ 100.  200.    1.]
+ [ 200.  200.    1.]
+ [ 300.  200.    1.]]
+new v = [[  89.  165.    1.]
+ [ 220.  165.    1.]
+ [ 351.  165.    1.]
+ [  89.  295.    1.]
+ [ 220.  295.    1.]
+ [ 351.  295.    1.]]
+new w = [[  70.  190.    1.]
+ [ 230.  190.    1.]
+ [ 390.  190.    1.]
+ [  70.  350.    1.]
+ [ 230.  350.    1.]
+ [ 390.  350.    1.]]
+M = 
+[[  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  2.23490430e+03   2.23490430e+03  -9.48778870e+02  -9.48778870e+02
+   -2.07231141e+05  -2.07231141e+05   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [ -9.48778870e+02  -9.48778870e+02   1.13082593e+03   1.13082593e+03
+    7.96530750e+05   7.96530750e+05   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [ -2.07231141e+05  -2.07231141e+05   7.96530750e+05   7.96530750e+05
+    7.34216128e+08   7.34216128e+08   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+ [  0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+    0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00]]
+b = 
+[[  0.00000000e+00]
+ [ -4.77192725e+03]
+ [ -1.64547424e+01]
+ [  0.00000000e+00]
+ [  1.62364160e+04]
+ [  3.22106628e+02]
+ [  0.00000000e+00]
+ [  1.47299180e+07]]
+H_hatInv = 
+[[ -1.13014345e+01  -1.13014345e+01  -3.06794472e+01]
+ [ -3.06794472e+01   3.00936922e-02   3.00936922e-02]
+ [  0.00000000e+00   0.00000000e+00   1.00000000e+00]]
+maja1668@Vans-MacBook-Pro:~/Documents/senior-project/Programs/PlaneMultiViewer$ 

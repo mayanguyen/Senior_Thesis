@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%bardproj_template.tex%%%%%%
+%%
+%% This is a template for the Bard Project Style.
+%%
+%% Copy it to a new file with a new name and use it as the basis
+%% for your Bard senior project or M.A.T. mathematics research project.
+%%
+%% Replace everything inside <   > with the appropriate text,
+%% and remove the <   >.
+%%
+%% Put a comment symbol (%) before anything in the template you 
+%% do not need.
+%%
+%% Add as many additional chapters, sections and bibliographic 
+%% entries as you need.
+%%
+%% Read the manual bardproj_man.tex or bardproj_man.pdf 
+%% for more details regarding the Bard Project Style.
+%%
+%% The Bard Project Style file and the manual for this style file
+%% can be found at http://math.bard.edu/bloch/bardtex.htm
+%%
+%% For additional help, or for suggestions or corrections
+%% contact Ethan Bloch at bloch@bard.edu
+%%
+%%%%%%%%%%%%Bard Senior Project Style %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt, oneside, reqno]{book}
+\usepackage{amssymb, amsthm, amsmath, amsfonts}
+\usepackage{bardproj}
+\usepackage{graphics}
+\usepackage{amsrefs}
+
+%<Your macros, if you have any>
+
+\begin{document}
+
+%For senior projects:
+\titlepg{<Title of Project>}{<Your Name>}
+    {<Month of Graduation>}{<Year of Graduation>}
+
+%For M.A.T. mathematics research projects, uncomment the following, and remove the above:
+%\titlepgmat{<Title of Project>}{<Your Name>}
+%    {<Month of Graduation>}{<Year of Graduation>}
+
+\abstr
+
+<Text of abstract>
+
+\tableofcontents
+
+\listoffigures
+
+\dedic
+
+<Text of dedication> 
+
+\acknowl
+
+<Text of acknowledgments>
+
+\doublespace
+
+\chapter{<Title of First Chapter>}
+\label{chapA}
+
+\section{<Title of First Section>}
+\label{secA1}
+
+<Text>
+
+\section{<Title of Second Section>}
+\label{secAB}
+
+<Text>
+
+\begin{figure}[ht]
+\centering
+\includegraphics{<Path+filename>}
+\caption{<Caption>}
+\label{<Figure Label>}
+\end{figure}
+
+\singlespace
+
+\begin{bibdiv}
+\begin{biblist}[\normalsize]
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\markboth{Bibliography}{Bibliography}
+
+\bib{<Label>}{book}{
+author = {<Last Name, First Name>},
+title = {<Title>},
+publisher = {<Publisher>},
+address = {<City>},
+date = {<Year>}
+}
+
+\bib{<Label>}{article}{
+author = {<Last Name, First Name>},
+title = {<Title>},
+journal = {<Journal Name>},
+volume = {<Volume Number>},
+date = {<Year>},
+pages = {<Starting Page--Ending Page>}
+}
+
+\end{biblist}
+\end{bibdiv}
+
+\end{document}
+
+% end of file bardproj_template.tex

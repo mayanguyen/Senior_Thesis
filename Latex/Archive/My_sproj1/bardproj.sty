@@ -1,0 +1,811 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  This is BARDPROJ.STY
+%%  
+%%  This style is meant for Bard senior projects
+%%  and Bard M.A.T. mathematics research projects.
+%%
+%%  This combines good amounts of svsing2e.sty 
+%% (Springer-Verlag) and Ragsmac.sty (from Bob McGrail), 
+%%  as well as theorem formatting from macrolp.sty (by 
+%%  Ethan Bloch), and some extras from Amy Hendrickson
+%%  designed for Proofs \& Fundamentals.
+%%  
+%% Read the manual bardproj_man.tex or bardproj_man.pdf 
+%% for more details regarding the Bard Project Style.
+%%
+%% The manual and a template for this style file
+%% can be found at http://math.bard.edu/bloch/tex.shtml
+%%
+%% For additional help, or for suggestions or corrections
+%% contact Ethan Bloch at bloch@bard.edu
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\catcode`\^^Z 10
+\typeout{Bard Project Style file "bardproj" v. 1.1 released May 2007}
+%
+% Stuff from svsing2e.sty
+% Copyright (C) 1988, 1994 Springer-Verlag, Inc.
+%
+%get rid of ae's
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Margin Stuff
+
+\setlength{\oddsidemargin}{0.5truein} 
+%%gives a 1.5-inch left margin.
+\setlength{\evensidemargin}{0.5truein} 
+%%gives a 1.5-inch left margin.
+
+\setlength{\textwidth}{5.9truein}
+%%allows 6.5 inches of text 
+%%between the left and right margins.
+\setlength{\textheight}{8.5truein}
+
+\setlength{\topmargin}{0truein}
+\setlength{\headheight}{0.3truein}
+\setlength{\headsep}{0.2truein}
+
+%%The above lines create a 1-inch top margin, a .4-inch %%space for the header, and .1 inch of white space, so the %%text begins 1.5 inches from the top edge of the paper.
+%%
+
+%% ((From svsing2e.sty??))
+%% \headheight=9pt
+%% \headsep=15pt   % 2pc-9pt
+%% \textheight=45pc
+%% %Let's put integer number of 12-pt \baselineskip's on page
+%% \advance\textheight-2\p@
+%% \textwidth=27pc
+
+
+\parindent=1em
+\parskip\z@
+\clubpenalty\@M
+\widowpenalty\@M
+%
+
+%%% Running head: 9 pt TR, c/lc, 2em# inside of fl. outside folio, base %%aligns
+%%% with folio; recto: CN, period, word # to CT; verso: contributor's %%name(s).
+%%% In single-author, verso: SN, period, word # to ST.
+%%%
+%%% If you want the running heads on the opposite pages, just put \flipheads
+%%% after the documentstyle.  LaTeX isn't bright enough to allow one option
+%%% file to define ds@flipheads.
+%%%
+
+\def\markbothsame#1{\markboth{#1}{#1}}
+
+
+\frenchspacing
+\def\@chapapp{}
+%8/10
+\def\viiiONx{\@setfontsize\@footnotesize\@viiipt{10pt}}
+%10/12
+\def\xONxii{\@setfontsize\normalsize\@xpt{12pt}}
+%12/14
+\def\xiiONxiv{\@setfontsize\large\@xiipt{14pt}}
+%14/16
+\def\xivONxvi{\@setfontsize\Large\@xivpt{16pt}}
+%14/14
+\def\xivONxiv{\@setfontsize\Large\@xivpt{14pt}}
+%20/20
+\def\xxONxx{\@setfontsize\huge\@xxpt{20pt}}
+%
+\renewcommand\footnotesize{%
+   \viiiONx
+   \abovedisplayskip 6\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus\p@
+   \belowdisplayshortskip 3\p@ \@plus\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 3\p@ \@plus\p@ \@minus\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+\font\chnum = cmr10 scaled \magstep5
+\def\chapter{\cleardoublepage      % Starts new recto.
+   \thispagestyle{empty}     % Page style of chapter page is 'empty'
+   \global\@topnum\z@        % Prevents figures from going at top of page.
+   \@afterindentfalse        % Suppresses indent in first paragraph.  Change
+   \secdef\@chapter\@schapter}   % to \@afterindenttrue to have indent.
+%
+% Chapter number: 24 CM, arabic numeral, fl.l, top text
+% Chapter title: 20/20 CM x 27pc, c/lc, fl.l, sink 60 pt from top
+%       type to base of CT, to's fl.l, do not hyphenate
+%
+\def\@makechapterhead#1{             % Heading for \chapter command
+% We want the chapter number to be 20 pts from top text.  The simplest
+% was is to set \topskip, making sure there's nothing between the number
+% and the top of page, so \baselineskip doesn't come in.
+\vbox to 238pt{{ \topskip=20pt \parindent 0pt \raggedright
+    \xxONxx\rm
+    \ifnum \c@secnumdepth >\m@ne     % IF secnumdepth > -1 THEN
+        {\chnum \@chapapp{} \thechapter} % Print 'Chapter' and number.
+    \fi
+    \par
+    \vskip 10pt             % Space between number and title.
+    #1\par                      % Title.
+    \nobreak                    % TeX penalty to prevent page break.
+~    \vfil
+}  }  }
+%
+\def\@makeschapterhead#1{             % Heading for \chapter* command
+\vbox to 238pt{{ \topskip=46pt \parindent 0pt \raggedright
+    \xxONxx\rm
+    #1\par                      % Title.
+    \nobreak                    % TeX penalty to prevent page break.
+     \vfil
+}  } }
+%
+% Restart the footnote counter each chapter.
+%
+%\newcounter{footnote}[chapter]
+%
+% FN    1pc space above footnotes to text.
+%       5 pc 1/2 pt rule fl.l. above footnotes
+%       leave 6pt # after rule followed by ftn
+%
+\skip\footins=18.5pt    % space above line and below line, 1pc+6pt+.5pt
+\footskip=16pt
+\footnotesep=7pt        % pretty arbitrary
+\def\footnoterule{\kern-6.5pt\hrule width 5pc height .5pt\vskip 6pt}
+%
+% Footnote at end of chapter position below last text line (not at bottom
+% of page).
+%
+\def\clearpage{\par\vfill\penalty -\@M \write\m@ne{}\vbox{}\penalty -\@Mi}
+\def\newpage{\par\vfill\penalty -\@M}
+\def\@makecol{\ifvoid\footins \setbox\@outputbox\box\@cclv
+   \else\setbox\@outputbox
+     \vbox{\unvbox\@cclv\vskip\skip\footins\footnoterule\unvbox\footins}\fi
+     \xdef\@freelist{\@freelist\@midlist}\gdef\@midlist{}\@combinefloats
+     \setbox\@outputbox\vbox to\@colht{\boxmaxdepth\maxdepth
+        \@texttop
+        \unvbox\@outputbox
+        \@textbottom}\global\maxdepth\@maxdepth}
+\flushbottom
+%
+% Abstract: 9/11 TRx25pi, sink 2.5pi b/b from CA
+%
+\def\abstract{\vskip 21pt % from CA
+\rightskip=1pc\leftskip=1pc\parindent=\z@
+\small\rm
+{ABSTRACT }}
+\def\endabstract{\par}  % If we don't do this, the paragraph won't be
+                        % set until after rightskip and leftskip have been
+                        % returned to their old values.
+%
+\def\tableofcontents{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+  \fi\chapter*{Contents}\markbothsame{Contents}%
+  \@starttoc{toc}\if@restonecol\twocolumn\fi}
+%
+% Don't indent the paragraph following each header.  Vertical distances
+% showld have \baselineskip taken out, and the height of the next
+% line, which should be text (10/12 TR).
+%
+\setcounter{secnumdepth}{2}     % number section and subsections
+\setcounter{tocdepth}{2}        % and put them in the table of contents
+% No 1 Head, 14/16 TR, 36pt b/b above, 24 tp b/b below
+\def\section{\@startsection
+    {section}{1}{\z@}{-24pt plus -6pt minus -3pt}{12pt}%
+        {\xivONxvi\rm\raggedright}}
+% No 2 Head, 12/14 TR, c/sc, 30pt above, 18 pt below
+\def\subsection{\@startsection
+    {subsection}{2}{\z@}{-18pt plus-4.8pt minus-2.4pt}{6pt}%
+        {\xiiONxiv\it\raggedright}}
+% No 3 Head, 10/12 TR, 24pt above, 18pt below
+\def\subsubsection{\@startsection
+    {subsubsection}{3}{\z@}{-12pt plus-4.2pt minus-2.1pt}{6pt}%
+        {\xONxii\rm\raggedright}}
+% No 4 Head, 10/12 TR italic, 20pt above, 18pt below
+\def\paragraph{\@startsection
+     {paragraph}{4}{\z@}{-8pt plus-3.8pt minus-1.7pt}{6pt}%
+        {\xONxii\it\raggedright}}
+% No 5 Head, 10/12 TR italic, period,  en space to run in text, 18pt above
+\def\subparagraph#1{\@startsection
+     {subparagraph}{5}{\z@}{-6pt plus-1.8pt
+minus-.9pt}{-.5em}{\xONxii\it}{#1.}}
+% Ack: Acknowledgements same as No 5 head, 36pt above
+\def\acknowledgments{\@startsection
+     {subparagraph}{6}{\z@}{-24pt plus-3.6pt minus-1.8pt}{-.5em}%
+        {\xONxii\it}*{Acknowledgments:\/}}
+% R-1: ``References'', same as No.2 head
+% unless it's single-author.
+\def\mainbibliography#1{{\bibliography{#1}}}
+\def\thebibliography#1{%
+  \chapter*{References}\markbothsame{References}%
+  \addcontentsline{toc}{chapter}{\protect\numberline{}References}%
+%endif
+  \list
+  {[\arabic{enumiv}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+    \advance\leftmargin\labelsep
+%Per zwart, enumi replaced by enumiv in this macro
+    \usecounter{enumiv}}
+    \def\newblock{\hskip .11em plus .33em minus -.07em}
+    \sloppy
+    \sfcode`\.=1000\relax}
+% Put index in the toc
+\def\theindex{\@restonecoltrue\if@twocolumn\@restonecolfalse\fi
+\columnseprule \z@
+\columnsep 35pt\twocolumn[\@makeschapterhead{Index}]
+    \addcontentsline{toc}{chapter}{\protect\numberline{}Index}%
+    \@mkboth{Index}{Index}\thispagestyle{empty}\parindent\z@
+    \parskip\z@ plus .3pt\relax\let\item\@idxitem}
+\def\theauthorindex{\@restonecoltrue\if@twocolumn\@restonecolfalse\fi
+\columnseprule \z@
+\columnsep 35pt\twocolumn[\@makeschapterhead{Author Index}]
+    \addcontentsline{toc}{chapter}{\protect\numberline{}Author Index}%
+    \@mkboth{Author Index}{Author Index}\thispagestyle{empty}\parindent\z@
+    \parskip\z@ plus .3pt\relax\let\item\@idxitem}
+\def\thesubjectindex{\@restonecoltrue\if@twocolumn\@restonecolfalse\fi
+\columnseprule \z@
+\columnsep 35pt\twocolumn[\@makeschapterhead{Subject Index}]
+    \addcontentsline{toc}{chapter}{\protect\numberline{}Subject Index}%
+    \@mkboth{Subject Index}{Subject Index}\thispagestyle{empty}\parindent\z@
+    \parskip\z@ plus .3pt\relax\let\item\@idxitem}
+\def\thesymbolindex{\@restonecoltrue\if@twocolumn\@restonecolfalse\fi
+\columnseprule \z@
+\columnsep 35pt\twocolumn[\@makeschapterhead{Symbol Index}]
+    \addcontentsline{toc}{chapter}{\protect\numberline{}Symbol Index}%
+    \@mkboth{Symbol Index}{Symbol Index}\thispagestyle{empty}\parindent\z@
+    \parskip\z@ plus .3pt\relax\let\item\@idxitem}
+%
+% lists: 10/12 TRx27pc, 1/2line# above/below
+%
+\topsep 6pt plus1.8pt minus.9pt    % Extra vertical space, in addition to
+                                   % \parskip, added above and below list and
+                                   % paragraphing environments.
+\itemsep 6pt plus1.8pt minus.9pt   % Extra vertical space, in addition to
+                                   % \parskip, added between list items.
+%
+% Eq: Center on text width; equation numbers set flush right, align with
+% last line of equation, 6pt # above/below.
+%
+\abovedisplayskip=6pt plus 1.8pt minus.9pt
+\belowdisplayskip=\abovedisplayskip
+\abovedisplayshortskip=\z@ plus 1.2pt
+\belowdisplayshortskip=3pt plus 1.5pt minus .75pt
+%
+
+ \tolerance=1600
+
+%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\rc}{\mathrel{\circ}}
+\newcommand{\x}{\times}
+\renewcommand{\o}{\circ}
+\newcommand{\alt}{\mathrel{|}}
+
+% M. Barr uses the following:  "It gives a \to that can be used as
+% $A\to B$ or $A\to^f B$ or $A\to^{f\o g\o h}B$ or even $A\to^f_gB$.  The
+% arrow will grow to fit the label(s).  There are similar definitions for
+% \two and \tofro, for which you really might want labels both above and
+% below.  Actually, by reading your definition of \kto, I was able to
+% simplify this.  But it is still nice to have the optional arguments.
+% There is only caveat: although you can have one or the other or both
+% labels, if you have both the upper must precede the lower.  These defs
+% must either be placed in a style file xor surrounded by \makeatletter
+% and \makeatother (but NOT both)."  (Modifications by rags)
+% The definitions below look more elaborate than they need to be.
+% The reason is that an empty asscript will still cause extra vertical
+% spacing and the only way to avoid ugly extra space seems to be using
+% some such method as this.
+
+\makeatletter
+
+% In-text size:
+
+\newdimen\w@dth
+
+\def\setw@dth#1#2{\setbox\z@\hbox{\scriptsize $#1$}\w@dth=\wd\z@
+\setbox\@ne\hbox{\scriptsize $#2$}\ifnum\w@dth<\wd\@ne \w@dth=\wd\@ne \fi
+\advance\w@dth by 1.2em}
+
+\def\t@^#1_#2{\allowbreak\def\n@one{#1}\def\n@two{#2}\mathrel
+{\setw@dth{#1}{#2}
+\mathop{\hbox to \w@dth{\rightarrowfill}}\limits
+\ifx\n@one\empty\else ^{\box\z@}\fi
+\ifx\n@two\empty\else _{\box\@ne}\fi}}
+\def\t@@^#1{\@ifnextchar_ {\t@^{#1}}{\t@^{#1}_{}}}
+
+
+\def\t@left^#1_#2{\def\n@one{#1}\def\n@two{#2}\mathrel{\setw@dth{#1}{#2}
+\mathop{\hbox to \w@dth{\leftarrowfill}}\limits
+\ifx\n@one\empty\else ^{\box\z@}\fi
+\ifx\n@two\empty\else _{\box\@ne}\fi}}
+\def\t@@left^#1{\@ifnextchar_ {\t@left^{#1}}{\t@left^{#1}_{}}}
+
+
+\def\two@^#1_#2{\def\n@one{#1}\def\n@two{#2}\mathrel{\setw@dth{#1}{#2}
+\mathop{\vcenter{\hbox to \w@dth{\rightarrowfill}\kern-1.7ex
+                 \hbox to \w@dth{\rightarrowfill}}%
+       }\limits
+\ifx\n@one\empty\else ^{\box\z@}\fi
+\ifx\n@two\empty\else _{\box\@ne}\fi}}
+\def\tw@@^#1{\@ifnextchar_ {\two@^{#1}}{\two@^{#1}_{}}}
+
+
+\def\tofr@^#1_#2{\def\n@one{#1}\def\n@two{#2}\mathrel{\setw@dth{#1}{#2}
+\mathop{\vcenter{\hbox to \w@dth{\rightarrowfill}\kern-1.7ex
+                 \hbox to \w@dth{\leftarrowfill}}%
+       }\limits
+\ifx\n@one\empty\else ^{\box\z@}\fi
+\ifx\n@two\empty\else _{\box\@ne}\fi}}
+\def\t@fr@^#1{\@ifnextchar_ {\tofr@^{#1}}{\tofr@^{#1}_{}}}
+
+% Displaysize:
+
+\newdimen\W@dth
+\def\setW@dth#1#2{\setbox\z@\hbox{$#1$}\W@dth=\wd\z@
+\setbox\@ne\hbox{$#2$}\ifnum\W@dth<\wd\@ne \W@dth=\wd\@ne \fi
+\advance\W@dth by 1.2em}
+
+\def\T@^#1_#2{\allowbreak\def\N@one{#1}\def\N@two{#2}\mathrel
+{\setW@dth{#1}{#2}
+\mathop{\hbox to \W@dth{\rightarrowfill}}\limits
+\ifx\N@one\empty\else ^{\box\z@}\fi
+\ifx\N@two\empty\else _{\box\@ne}\fi}}
+\def\T@@^#1{\@ifnextchar_ {\T@^{#1}}{\T@^{#1}_{}}}
+
+
+\def\T@left^#1_#2{\def\N@one{#1}\def\N@two{#2}\mathrel{\setW@dth{#1}{#2}
+\mathop{\hbox to \W@dth{\leftarrowfill}}\limits
+\ifx\N@one\empty\else ^{\box\z@}\fi
+\ifx\N@two\empty\else _{\box\@ne}\fi}}
+\def\T@@left^#1{\@ifnextchar_ {\T@left^{#1}}{\T@left^{#1}_{}}}
+
+
+\def\Tofr@^#1_#2{\def\N@one{#1}\def\N@two{#2}\mathrel{\setW@dth{#1}{#2}
+\mathop{\vcenter{\hbox to \W@dth{\rightarrowfill}\kern-1.7ex
+                 \hbox to \W@dth{\leftarrowfill}}%
+       }\limits
+\ifx\N@one\empty\else ^{\box\z@}\fi
+\ifx\N@two\empty\else _{\box\@ne}\fi}}
+\def\T@fr@^#1{\@ifnextchar_ {\Tofr@^{#1}}{\Tofr@^{#1}_{}}}
+
+
+\def\Two@^#1_#2{\def\N@one{#1}\def\N@two{#2}\mathrel{\setW@dth{#1}{#2}
+\mathop{\vcenter{\hbox to \W@dth{\rightarrowfill}\kern-1.7ex
+                 \hbox to \W@dth{\rightarrowfill}}%
+       }\limits
+\ifx\N@one\empty\else ^{\box\z@}\fi
+\ifx\N@two\empty\else _{\box\@ne}\fi}}
+\def\Tw@@^#1{\@ifnextchar_ {\Two@^{#1}}{\Two@^{#1}_{}}}
+
+
+\def\to{\@ifnextchar^ {\t@@}{\t@@^{}}}
+\def\from{\@ifnextchar^ {\t@@left}{\t@@left^{}}}
+\def\two{\@ifnextchar^ {\tw@@}{\tw@@^{}}}
+\def\tofro{\@ifnextchar^ {\t@fr@}{\t@fr@^{}}}
+\def\To{\@ifnextchar^ {\T@@}{\T@@^{}}}
+\def\From{\@ifnextchar^ {\T@@left}{\T@@left^{}}}
+\def\Two{\@ifnextchar^ {\Tw@@}{\Tw@@^{}}}
+\def\Tofro{\@ifnextchar^ {\T@fr@}{\T@fr@^{}}}
+
+\makeatother
+
+
+
+
+%%\renewcommand{\thesection}{\thechapter.\arabic{section}}
+%%\renewcommand \thefigure
+%%     {\ifnum \c@chapter>\z@ \thechapter.\fi \@arabic\c@figure}
+%%\newcounter{figure}[chapter]
+%\renewcommand{\thefigure}{\thesection.\@arabic\c@figure}
+
+
+%%Ethan added the following.
+
+\newcommand{\rrr}[1]{{\mathbb{R}}^{#1}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\zp}{{\zz}^+}
+\newcommand{\qqq}{\mathbb{Q}}
+\newcommand{\nn}{\mathbb{N}}
+\newcommand{\func}[3]{{#1} \colon {#2} \to {#3}}
+
+
+\providecommand{\qensymbol}{$///$}%
+\newcommand{\demo}{\begin{proof}[{\bf Proof}]}
+\newcommand{\edemo}{\end{proof}}
+\newcommand{\argu}{\begin{proof}[{\bf Argument}]}
+\newcommand{\eargu}{\end{proof}}
+\newcommand{\demoname}[1]{\begin{proof}[{\bf #1}]}
+\newcommand{\edemoname}{\end{proof}}
+\newcommand{\nondemo}[1]{\begin{proof}[{\bf #1}]}
+\newcommand{\enondemo}{\renewcommand{\qedsymbol}{\qensymbol}
+\end{proof}}
+\newcommand{\demoex}{\begin{proof}[{\bf Proof}]}
+\newcommand{\edemoex}{\renewcommand{\qedsymbol}{\qensymbol}
+\end{proof}}
+
+
+\newcommand{\eq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+
+\newcommand{\equa}[1]{\begin{equation}\label{#1}}
+\newcommand{\eequa}{\end{equation}}
+
+\newcommand{\Ffact}{Fact}
+\newcommand{\ffact}{fact}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{theoremn}{Theorem}
+\newtheorem*{conjecturen}{Conjecture}
+\newtheorem*{claimn}{Claim}
+\newtheorem*{corollaryn}{Corollary}
+\newtheorem*{lemman}{Lemma}
+\newtheorem*{propositionn}{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exercise}{}[section]
+\newtheorem{problemm}{}
+\newtheorem{exercisee}{Exercise}[section]
+\newtheorem*{definitionn}{Definition}
+\newtheorem*{examplen}{Example}
+\newtheorem*{remarkn}{Remark}
+\newtheorem*{algorithmn}{Algorithm}
+\newtheorem*{exercisen}{}
+\newtheorem*{problemmn}{}
+\newtheorem*{exerciseen}{Exercise}
+
+\newcommand{\thm}{\begin{theorem}}
+\newcommand{\ethm}{\end{theorem}}
+\newcommand{\conj}{\begin{conjecture}}
+\newcommand{\econj}{\end{conjecture}}
+\newcommand{\clm}{\begin{claim}}
+\newcommand{\eclm}{\end{claim}}
+\newcommand{\expl}{\begin{example}}
+\newcommand{\eexpl}{\qex\end{example}}
+\newcommand{\remk}{\begin{remark}}
+\newcommand{\eremk}{\qex\end{remark}}
+\newcommand{\alg}{\begin{algorithm}}
+\newcommand{\ealg}{\qex\end{algorithm}}
+\newcommand{\defn}{\begin{definition}}
+\newcommand{\edefn}{\qef\end{definition}}
+\newcommand{\thmn}{\begin{theoremn}}
+\newcommand{\ethmn}{\end{theoremn}}
+\newcommand{\conjn}{\begin{conjecturen}}
+\newcommand{\econjn}{\end{conjecturen}}
+\newcommand{\clmn}{\begin{claimn}}
+\newcommand{\eclmn}{\end{claimn}}
+\newcommand{\expln}{\begin{examplen}}
+\newcommand{\eexpln}{\qex\end{examplen}}
+\newcommand{\remkn}{\begin{remarkn}}
+\newcommand{\eremkn}{\qex\end{remarkn}}
+\newcommand{\algn}{\begin{algorithmn}}
+\newcommand{\ealgn}{\qex\end{algorithmn}}
+
+
+\newcommand{\exr}{\begin{exercise}}
+\newcommand{\eexr}{\end{exercise}}
+
+\newcommand{\exrs}[1]{\begin{exercise}
+{\bf [#1]}\ \ }
+\newcommand{\eexrs}{\end{exercise}}
+
+\newcommand{\exre}{\begin{exercisee} \rm}
+\newcommand{\eexre}{\end{exercisee}}
+
+\newcommand{\hexr}[1]{\begin{proof}[{\bf \ref{#1}}]}
+\newcommand{\ehexr}{\renewcommand{\qed}{}
+\end{proof}}
+
+\newcommand{\helpsec}[2]{\par\par\par\spce\spce\spce
+{\qquad\quad \bf Section 
+\ref{#1} \quad #2}\par\par}
+
+
+\newcommand{\prob}{\begin{problemm}. \rm}
+\newcommand{\eprob}{\end{problemm}}
+
+
+%%Fix these, so that they can be labeled,
+%%and so that the variable is the label.
+%%\newcommand{\exercise}[1]{\par\medskip\noindent{\bf #1}.
+%%\ \ }
+%%\newcommand{\eexercise}{}
+
+\newcommand{\coro}{\begin{corollary}}
+\newcommand{\ecoro}{\end{corollary}}
+\newcommand{\lem}{\begin{lemma}}
+\newcommand{\elem}{\end{lemma}}
+\newcommand{\prop}{\begin{proposition}}
+\newcommand{\eprop}{\end{proposition}}
+\newcommand{\coron}{\begin{corollaryn}}
+\newcommand{\ecoron}{\end{corollaryn}}
+\newcommand{\lemn}{\begin{lemman}}
+\newcommand{\elemn}{\end{lemman}}
+\newcommand{\propn}{\begin{propositionn}}
+\newcommand{\epropn}{\end{propositionn}}
+
+\newtheorem{ffigure}{\hskip 1.8truein Insert Figure}[section]
+\newcommand{\figg}{\begin{ffigure} \rm}
+\newcommand{\efigg}{\end{ffigure}}
+
+\providecommand{\qexsymbol}{$\lozenge$}%
+\newcommand{\mathqex}{\quad\hbox{\qexsymbol}}
+\DeclareRobustCommand{\qex}{%
+  \ifmmode \mathqex
+  \else
+    \leavevmode\unskip\penalty9999 \hbox{}\nobreak\hfill
+    \quad\hbox{\qexsymbol}%
+  \fi
+}
+\providecommand{\qefsymbol}{$\triangle$}%
+\newcommand{\mathqef}{\quad\hbox{\qefsymbol}}
+\DeclareRobustCommand{\qef}{%
+  \ifmmode \mathqef
+  \else
+    \leavevmode\unskip\penalty9999 \hbox{}\nobreak\hfill
+    \quad\hbox{\qefsymbol}%
+  \fi
+}
+
+
+\newenvironment{enumerateb}
+              {\begin{list}{\textbf {\arabic{enumi}.}}
+                  {\usecounter{enumi}
+                   \setlength{\leftmargin}{0pt}
+                   \setlength{\itemindent}{0pt}
+                  }}
+              {\end{list}}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\titleplus}[4]{
+\begin{titlepage}
+\vfill\vfill
+\begin{center}
+\Huge {#1}
+\end{center}
+\vfill\vfill
+\begin{center}
+\Large A Senior Project submitted to\\
+The Division of Science, Mathematics, and Computing\\
+of\\
+Bard College
+\end{center}
+\vskip 0.2truein
+\begin{center}
+\Large by\\
+{#2}
+\end{center}
+\vfill\vfill\vfill
+\begin{center}
+\Large Annandale-on-Hudson, New York\\
+{#3}, {#4}
+\end{center}
+\end{titlepage}
+\tableofcontents    
+%%\setlength{\baselineskip}{24pt}  
+}
+
+\newcommand{\titlepg}[4]{
+\begin{titlepage}
+\vfill\vfill
+\begin{center}
+\Huge {#1}
+\end{center}
+\vfill\vfill
+\begin{center}
+\Large A Senior Project submitted to\\
+The Division of Science, Mathematics, and Computing\\
+of\\
+Bard College
+\end{center}
+\vskip 0.2truein
+\begin{center}
+\Large by\\
+{#2}
+\end{center}
+\vfill\vfill\vfill
+\begin{center}
+\Large Annandale-on-Hudson, New York\\
+{#3}, {#4}
+\end{center}
+\end{titlepage}
+%%\setlength{\baselineskip}{24pt}  
+}
+
+\newcommand{\titleplusmat}[4]{
+\begin{titlepage}
+\vfill\vfill
+\begin{center}
+\Huge {#1}
+\end{center}
+\vfill\vfill
+\begin{center}
+\Large A Mathematics Research Project submitted to\\
+The Master of Arts in Teaching Program\\
+of\\
+Bard College
+\end{center}
+\vskip 0.2truein
+\begin{center}
+\Large by\\
+{#2}
+\end{center}
+\vfill\vfill\vfill
+\begin{center}
+\Large Annandale-on-Hudson, New York\\
+{#3}, {#4}
+\end{center}
+\end{titlepage}
+\tableofcontents    
+%%\setlength{\baselineskip}{24pt}  
+}
+
+\newcommand{\titlepgmat}[4]{
+\begin{titlepage}
+\vfill\vfill
+\begin{center}
+\Huge {#1}
+\end{center}
+\vfill\vfill
+\begin{center}
+\Large A Mathematics Research Project submitted to\\
+The Master of Arts in Teaching Program\\
+of\\
+Bard College
+\end{center}
+\vskip 0.2truein
+\begin{center}
+\Large by\\
+{#2}
+\end{center}
+\vfill\vfill\vfill
+\begin{center}
+\Large Annandale-on-Hudson, New York\\
+{#3}, {#4}
+\end{center}
+\end{titlepage}
+%%\setlength{\baselineskip}{24pt}  
+}
+
+\newcommand{\titlepgjrsem}[4]{
+\begin{titlepage}
+\vfill\vfill
+\begin{center}
+\Huge {#1}
+\end{center}
+\vfill\vfill
+\begin{center}
+\Large Expository Writing submitted to\\
+The Mathematics Junior Seminar\\
+of\\
+Bard College
+\end{center}
+\vskip 0.2truein
+\begin{center}
+\Large by\\
+{#2}
+\end{center}
+\vfill\vfill\vfill
+\begin{center}
+\Large Annandale-on-Hudson, New York\\
+{#3}, {#4}
+\end{center}
+\end{titlepage}
+%%\setlength{\baselineskip}{24pt}  
+}
+
+\newcommand{\doublespace}{\setlength{\baselineskip}{24pt}}
+\newcommand{\singlespace}{\setlength{\baselineskip}{12pt}}
+
+%%%%%%%%%%%%%%%%%%%%%
+
+%%For use with BMP files.
+%%Label (also figure name), width, height
+%%Requires \input setbmp
+\newcommand{\figbmp}[5]
+{\begin{figure}[ht]
+\centerbmp{#3}{#4}{#1}
+\caption{#5}\label{#2}
+\end{figure}}
+
+%%For use with JPEG files.  Must use PS mode.
+%%Label (also figure name), width, height
+%%Requires \input setbmp
+\newcommand{\figjpg}[5]
+{\begin{figure}[ht]
+\centerbmp{#3}{#4}{#1}
+\caption{#5}\label{#2}
+\end{figure}}
+
+%%For use with EPS files.  Must use PS mode.
+%%Requires \usepackage{graphics}
+\newcommand{\figeps}[3]
+{\vskip\figskip
+\begin{figure}[ht]
+\hfil\includegraphics{#1}\hfil
+\caption{#3}\label{#2}
+\end{figure}}
+
+\newcommand{\figspace}[2]{
+\begin{figure}[ht]
+\begin{center}
+\vskip #1
+\end{center}
+\caption{\label{#2}}
+\end{figure}
+}
+
+
+
+\long\def\@makecaption#1{{
+   \vskip 6pt
+   \small
+   \setbox\@tempboxa\hbox{#1}
+   \ifdim \wd\@tempboxa >\hsize   % IF longer than one line:
+      \unhbox\@tempboxa\hfil\par      %  THEN set as ordinary
+%paragraph.
+     \else                        %   ELSE  center.
+       \hbox to\hsize{\hfil\box\@tempboxa\hfil}
+   \fi}}
+%%Here
+\def\fnum@figure{\small Figure \thefigure}
+%{\sc FIGURE~}\thefigure}
+
+
+\makeatletter
+
+
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{#1. #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    #1. #2\par
+  \else
+    \global \@minipagefalse
+    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+
+\makeatother
+
+\newcommand{\abstr}{\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\markboth{}{}}
+
+\newcommand{\acknowl}{\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+\markboth{}{}}
+
+\newcommand{\dedic}{\chapter*{Dedication}
+\addcontentsline{toc}{chapter}{Dedication}
+\markboth{}{}}
+
+
+
+%%From Amy Hendrickson, for Proofs \& Fundamentals
+
+\makeatletter
+\@addtoreset{equation}{section}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+
+\renewcommand{\thefigure}{\thesection.\@arabic\c@figure}
+\@addtoreset{figure}{section}
+
+\renewcommand{\thetable}{\thesection.\@arabic\c@table}
+\@addtoreset{table}{section}
+

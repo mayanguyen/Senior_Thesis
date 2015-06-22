@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%bardpresentation_template.tex%%%%%%
+%%
+%% This is a template for the Bard Presentation Style, which is used in
+%% conjunction with the Seminar document class.
+%%
+%% Copy it to a new file with a new name and use it as the basis
+%% for a presentation.
+%%
+%% Replace everything inside <   > with the appropriate text,
+%% and remove the <   >.
+%%
+%% Put a comment symbol (%) before anything in the template you 
+%% do not need.
+%%
+%% Add as many slides as you need.
+%%
+%% Read the manual bardpresentation_man.tex or bardpresentation_man.pdf 
+%% for more details regarding the Bard Presentation Style.
+%%
+%% The Bard Presentation Style file and the manual for this style file
+%% can be found at http://math.bard.edu/bloch/bardtex.htm
+%%
+%% For additional help, or for suggestions or corrections
+%% contact Ethan Bloch at bloch@bard.edu
+%%
+%% This style file requires some LaTeX packages, which might already 
+%% be available in your implementation of TeX, and if needed can be downloaded
+%% from http://math.bard.edu/bloch/bardtex.htm
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass{seminar}
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+\usepackage{hyperref,graphicx,color,fancybox,color}
+\usepackage{bardpresentation}
+
+%\bordercolor{Rhodamine} 
+\titlecolor{Periwinkle}
+\authorcolor{RedOrange}
+\datecolor{GreenYellow}
+%\txtcolor{RedViolet}
+%\highlightcolor{GreenYellow}
+%\enumcolor{Periwinkle}
+%\bulletcolor{Red}
+%\itemcolor{Magenta}
+%\eqcolor{Melon}
+
+\titleb{Bard Prospectus Talk}
+\authorb{Van Mai Nguyen Thi}
+\dateb{6 November 2014}
+
+%\wordsize{\LARGE}
+
+\begin{document}
+
+\titleslide
+
+\singlehead
+{Single Slide, Heading}
+{The colors of the boxes in this sample presentation are the default colors, but they can be changed.}
+
+\groupheadbull 3
+{
+{Grouping, Bullets, Heading}
+{This}
+{Is a}
+{Grouping}
+}
+
+\groupheadenumcstart 35
+{
+{Grouping, Enumeration, Heading}
+{This}
+{Grouping}
+{Has enumeration, colored items}
+{And has the first slide}
+{With three items already on it}
+}
+
+\bulletchoice{\textcolor{Purple}{\Large $\ast$}}
+
+\groupnoheadbullf 3
+{
+{This is a grouping without a heading}
+{It is possible to change the bullets in itemized lists}
+{It is even possible to use graphics files as bullets}
+}
+
+\pagecolor{Yellow}
+
+\singlehead
+{Single Item, Heading}
+{You can have background color for the pages, starting any time.}
+
+\sidestripempty
+
+\groupnohead 6
+{
+{Now}
+{we have}
+{an example}
+{of an unstructured grouping}
+{\par \bigskip with a forced new paragraph with space before it.}
+{\par \bigskip \bigskip Note also that the side strip can be removed}
+}
+
+\sidestripfull
+\bottomstripempty
+
+\singleheadcenter
+{Single Slide, Heading, Centered}
+{Automatic theorem numbering works when theorems are in single slides, such as this one.\thm Math is great.\ethm \par \bigskip The bottom strip can also be removed.}
+
+\end{document}

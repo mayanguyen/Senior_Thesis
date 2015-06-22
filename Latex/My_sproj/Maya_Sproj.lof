@@ -1,0 +1,25 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1.1}{\ignorespaces Hans Holbein's \textit {The Ambassadors}, 1533\relax }}{9}
+\contentsline {figure}{\numberline {1.1.2}{\ignorespaces Undistorted skull from H. Holbein's \textit {The Ambassadors}\relax }}{9}
+\contentsline {figure}{\numberline {1.1.3}{\ignorespaces Road sign in the shape of an elongated bike. Left: view from the top; right: view from a driver's perspective\nobreakspace {}\cite {hunt2000anamorphic}.\relax }}{10}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1.1}{\ignorespaces Graphical representation of the pinhole camera model.\nobreakspace {}\cite {burger2009digital}\relax }}{14}
+\contentsline {figure}{\numberline {2.3.1}{\ignorespaces Examples of basic 2D transformations. \cite {szeliski2010computer}\relax }}{19}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.2.1}{\ignorespaces The homographies between the projector image, camera image, and projection surface.\relax }}{30}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1.1}{\ignorespaces Steps involved in finding the homography $H_{PC}$: (a) project a rectangular pattern (b) Detect the pattern in the camera image\relax }}{39}
+\contentsline {figure}{\numberline {4.1.2}{\ignorespaces Verify that the anamorph is seen correctly by the camera: (a) project the anamorph (b) The image (white rectangle) is seen correctly in the camera image.\relax }}{39}
+\contentsline {figure}{\numberline {4.1.3}{\ignorespaces Screen shots and camera captures of the program\relax }}{40}
+\contentsline {figure}{\numberline {4.1.4}{\ignorespaces Diagram of the scenario in which the points in the camera image are mapped outside of the projector image: (a) camera image (b) projector image\relax }}{42}
+\contentsline {figure}{\numberline {4.1.5}{\ignorespaces (a) Anamorphic image not fitting inside the projector image. (b) When the anamorphic image in (a) is projected, the camera receives an incomplete image.\relax }}{43}
+\contentsline {figure}{\numberline {4.1.6}{\ignorespaces Incorrectly detected projection corners.\relax }}{44}
+\contentsline {figure}{\numberline {4.2.1}{\ignorespaces Screenshots of the program: (a) Detected chessboard corners. (b) Prepared pre-anamorph. (c) Anamorphic image after warping. (d) Anamorphic image seen correctly by the camera.\relax }}{45}
+\contentsline {figure}{\numberline {4.2.2}{\ignorespaces Detected projection screen corners marked with blue dots.\relax }}{47}
+\contentsline {figure}{\numberline {4.2.3}{\ignorespaces (a) Original chessboard corners in the projector image. (b) Detected chessboard corners in the camera image.\relax }}{48}
+\contentsline {figure}{\numberline {4.2.4}{\ignorespaces Screenshots of the program\relax }}{50}
+\contentsline {figure}{\numberline {4.2.5}{\ignorespaces A scenario in which the program fails to detect the chessboard corners correctly.\relax }}{51}
+\contentsline {figure}{\numberline {4.3.1}{\ignorespaces The new setup: (a) Camera 1 (b) Projector (c) Camera 2 (d) Projection surface.\relax }}{54}
+\contentsline {figure}{\numberline {4.3.2}{\ignorespaces The new setup and notation for the homographies.\relax }}{55}
+\contentsline {figure}{\numberline {4.3.3}{\ignorespaces New chessboard patterns.\relax }}{57}
+\addvspace {10\p@ }

@@ -1,0 +1,20 @@
+\contentsline {chapter}{Abstract}{1}
+\contentsline {chapter}{Dedication}{3}
+\contentsline {chapter}{Acknowledgments}{4}
+\contentsline {chapter}{\numberline {1}Introduction}{5}
+\contentsline {section}{\numberline {1.1}Background}{5}
+\contentsline {section}{\numberline {1.2}Definitions}{8}
+\contentsline {subsection}{\numberline {1.2.1}Basic geometry}{8}
+\contentsline {subsection}{\numberline {1.2.2}Homogeneous representation}{8}
+\contentsline {subsection}{\numberline {1.2.3}2D Transformations}{9}
+\contentsline {subsection}{\numberline {1.2.4}Types of anamorphosis}{10}
+\contentsline {chapter}{\numberline {2}Anamorphic Projections}{11}
+\contentsline {section}{\numberline {2.1}Planes}{11}
+\contentsline {section}{\numberline {2.2}Multiple Planes}{11}
+\contentsline {section}{\numberline {2.3}Cylinders}{11}
+\contentsline {section}{\numberline {2.4}Cones}{11}
+\contentsline {section}{\numberline {2.5}Mirrors}{11}
+\contentsline {chapter}{\numberline {3}Methods}{12}
+\contentsline {section}{\numberline {3.1}<Title of First Section>}{12}
+\contentsline {section}{\numberline {3.2}<Title of Second Section>}{12}
+\contentsline {chapter}{Bibliography}{14}
